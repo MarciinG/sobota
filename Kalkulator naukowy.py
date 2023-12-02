@@ -131,22 +131,6 @@ button_params_main = {'bd':5, 'fg':'#000', 'bg':'#BBB', 'font':('sans-serif', 20
 '''
 Buttons
 '''
-#--1st row--
-# Absolute value of a number
-abs_value = Button(tk_calc, button_params, text='abs',
-                   command=lambda:button_click('abs(')).grid(row=1, column=0, sticky="nsew")
-# Remainder of a division
-modulo = Button(tk_calc, button_params, text='mod',
-                command=lambda:button_click('%')).grid(row=1, column=1, sticky="nsew")
-# Integer division quotient
-int_div = Button(tk_calc, button_params, text='div',
-                 command=lambda:button_click('//')).grid(row=1, column=2, sticky="nsew")
-# Factorial of a number
-factorial_button = Button(tk_calc, button_params, text='x!',
-                   command=fact_func).grid(row=1, column=3, sticky="nsew")
-# Euler's number e
-eulers_num = Button(tk_calc, button_params, text='e',
-                    command=lambda:button_click(str(math.exp(1)))).grid(row=1, column=4, sticky="nsew")
 
 #--2nd row--
 # Sine of an angle in degrees
